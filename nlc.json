@@ -1,0 +1,33 @@
+{
+  "services": {
+    "nlc.cli": {
+      "class": "src/CommandManager",
+      "lazy": true,
+      "arguments": [
+        "@nlc.core",
+        "@nlc.cli.command.collection"
+      ]
+    },
+    "nlc.cli.command.collection": {
+      "factory": {
+        "class": "@nlc.util.collection.factory",
+        "method": "create"
+      },
+      "arguments": [
+        "commands/*.js",
+        true
+      ],
+      "tags": [
+        {
+          "name": "lazy"
+        },
+        {
+          "name": "collection"
+        }
+      ]
+    }
+  },
+  "extensions": [
+    "nlc"
+  ]
+}

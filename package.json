@@ -1,0 +1,24 @@
+{
+  "name": "nlc-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "localdev uninstall T:/projects nlc-util nlc",
+    "postinstall": "localdev install T:/projects nlc-util nlc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerraZero/nlc-cli.git"
+  },
+  "author": "TerraZero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TerraZero/nlc-cli/issues"
+  },
+  "homepage": "https://github.com/TerraZero/nlc-cli#readme",
+  "dependencies": {
+    "commander": "^4.1.1"
+  }
+}
